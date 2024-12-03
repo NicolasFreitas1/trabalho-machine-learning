@@ -108,9 +108,3 @@ joblib.dump(best_model_rf, 'random_forest_model.pkl')
 joblib.dump(scaler, 'scaler.pkl')
 joblib.dump(encoder, 'encoder.pkl')
 
-
-
-
-
-
-# %%
