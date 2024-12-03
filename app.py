@@ -1,10 +1,13 @@
 import joblib
-import pandas as pd
 import numpy as np
-from flask import Flask, request, jsonify
+import pandas as pd
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 app = Flask(__name__)
+
+CORS(app)
 
 model_rf = joblib.load('random_forest_model.pkl')
 scaler = joblib.load('scaler.pkl')
